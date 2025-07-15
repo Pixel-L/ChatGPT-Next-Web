@@ -479,19 +479,20 @@ export const VISION_MODEL_REGEXES = [
   /vision/,
   /gpt-4o/,
   /gpt-4\.1/,
-  /claude-3/,
+  /claude.*[34]/,
   /gemini-1\.5/,
   /gemini-exp/,
-  /gemini-2\.0/,
+  /gemini-2\.[05]/,
   /learnlm/,
   /qwen-vl/,
   /qwen2-vl/,
-  /gpt-4-turbo(?!.*preview)/, // Matches "gpt-4-turbo" but not "gpt-4-turbo-preview"
-  /^dall-e-3$/, // Matches exactly "dall-e-3"
+  /gpt-4-turbo(?!.*preview)/,
+  /^dall-e-3$/,
   /glm-4v/,
   /vl/i,
   /o3/,
   /o4-mini/,
+  /grok-4/i,
 ];
 
 export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
@@ -571,6 +572,8 @@ const anthropicModels = [
   "claude-3-5-sonnet-latest",
   "claude-3-7-sonnet-20250219",
   "claude-3-7-sonnet-latest",
+  "claude-sonnet-4-20250514",
+  "claude-opus-4-20250514",
 ];
 
 const baiduModels = [
